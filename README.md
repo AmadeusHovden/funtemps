@@ -1,6 +1,9 @@
 # funtemps
 brukes til første testing oppgave (13.feb)
 
+## MÅL
+ I denne oppgaven skal du planlegge og implementere et program (kommando, fordi at den skal starte fra kommandolinje med inn-data på kommandolinje og skrive ut svar/ut-data til kommandolinje), som regner om fra en temperaturskala til en annen. I tillegg skal ditt program kunne skrive ut noen "fun-facts" om temperaturer på Solen, Månen og Jorden.
+
 
 
 ## fra janis read.me
