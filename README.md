@@ -33,7 +33,7 @@ func withinTolerance(a, b, error float64) bool {
   return (difference/math.Abs(b)) < error
 }
 
-#Det er anbefalt å bruke denne funksjonen i testene hvor float64 er innvolvert. Testen vi hadde foreslått var
+### Det er anbefalt å bruke denne funksjonen i testene hvor float64 er innvolvert. Testen vi hadde foreslått var
 
 for _, tc := range tests {
   got := FarhenheitToCelsius(tc.input)
@@ -42,7 +42,7 @@ for _, tc := range tests {
   }
 }
 
-# Og hvis vi erstatter !reflect.DeepEqual(tc.want, got) med !withinTolerance(tc.want, got, 1e-12) så får vi
+### Og hvis vi erstatter !reflect.DeepEqual(tc.want, got) med !withinTolerance(tc.want, got, 1e-12) så får vi
 
 for _, tc := range tests {
   got := FarhenheitToCelsius(tc.input)
