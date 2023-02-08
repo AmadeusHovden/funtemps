@@ -5,6 +5,17 @@ import (
 	"testing"
 )
 
+/* fra janis:
+erstatte denne her??
+
+for _, tc := range tests {
+  got := FarhenheitToCelsius(tc.input)
+  if !withinTolerance(tc.want, got, 1e-12) {
+    t.Errorf("expected: %.18f, got: %.18f", tc.want, got)
+  }
+}
+*/
+
 // fahr to cels
 func TestFahrenheitToCelsius(t *testing.T) {
 	type test struct {
