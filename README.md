@@ -32,7 +32,8 @@ func withinTolerance(a, b, error float64) bool {
   // Tilslutt sjekk den relative differanse mot feilmargin
   return (difference/math.Abs(b)) < error
 }
-Det er anbefalt å bruke denne funksjonen i testene hvor float64 er innvolvert. Testen vi hadde foreslått var
+
+#Det er anbefalt å bruke denne funksjonen i testene hvor float64 er innvolvert. Testen vi hadde foreslått var
 
 for _, tc := range tests {
   got := FarhenheitToCelsius(tc.input)
@@ -40,7 +41,8 @@ for _, tc := range tests {
     t.Errorf("expected: %v, got: %v", tc.want, got)
   }
 }
-Og hvis vi erstatter !reflect.DeepEqual(tc.want, got) med !withinTolerance(tc.want, got, 1e-12) så får vi
+
+# Og hvis vi erstatter !reflect.DeepEqual(tc.want, got) med !withinTolerance(tc.want, got, 1e-12) så får vi
 
 for _, tc := range tests {
   got := FarhenheitToCelsius(tc.input)
@@ -48,6 +50,7 @@ for _, tc := range tests {
     t.Errorf("expected: %.18f, got: %.18f", tc.want, got)
   }
 }
-Referanser
 
+
+# Referanser
 Gerardi, R. (2021, December 21). Testing Floating Point Numbers in Go - The Pragmatic Programmers - Medium. Medium; The Pragmatic Programmers. https://medium.com/pragmatic-programmers/testing-floating-point-numbers-in-go-9872fe6de17f
