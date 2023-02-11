@@ -6,9 +6,13 @@ import (
 )
 
 // Definerer flag-variablene i hoved-"scope"
-var fahr float64
+var Fahrenheit float64
+var Celsius float64
+var Kelvin float64
+
 var out string
-var funfacts string
+
+var funFacts string
 
 // Bruker init (som anbefalt i dokumentasjonen) for å sikre at flagvariablene
 // er initialisert.
