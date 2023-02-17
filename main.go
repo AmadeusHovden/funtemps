@@ -115,3 +115,7 @@ func isFlagPassed(name string) bool {
 	})
 	return found
 }
+
+// input terminal
+// go run main.go -(C, F, K) GRADER -out (C, F, K)
+// go run main.go -funfacts (Sun, Luna, Terra) -t C
