@@ -4,14 +4,6 @@ var Fahrenheit float64
 var Celsius float64
 var Kelvin float64
 
-func ParseCelsius(s string) (float64, error) {
-	celsius, err := strconv.ParseFloat(s, 64)
-	if err != nil {
-		return 0, errors.New("invalid temperature")
-	}
-	return celsius, nil
-}
-
 // Konverterer Farhenheit til Celsius
 func FahrenheitToCelsius(value float64) float64 {
 	Celsius = (Fahrenheit - 32.0) * 5.0 / 9.0
